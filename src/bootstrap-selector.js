@@ -4,11 +4,22 @@
  * selectors, creating a very nice UI.
  */
 var BootstrapSelector = (function($){
-  function BootstrapSelector(filterName) {
+  function BootstrapSelector(filterName, label) {
+    this._selectId = "select-" + filterName;
     this._filterName = filterName;
     this._span = $("<span>");
+    if (label) {
+      this._label = $("<label>");
+      this._label.addClass("control-label")
+                 .attr("for", this._selectId)
+                 .text(label);
+      this._span.append(this._label);
+    }
+
     this._select = $("<select>");
+    this._select.attr("id", this._selectId);
     this._span.append(this._select);
+
     this._options = [];
     this._select.bind("change", $.proxy(function() {
       if (this._callback !== undefined) {

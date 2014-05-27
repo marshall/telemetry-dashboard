@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>FxOS Ping Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap, Awesome Font, nvd3 and Bootstrap-Select -->
+  <link rel="stylesheet"
+        href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+  <link rel="stylesheet"
+        href="//netdna.bootstrapcdn.com/font-awesome/4.0.2/css/font-awesome.min.css">
+  <link rel="stylesheet"
+        href="//cdnjs.cloudflare.com/ajax/libs/nvd3/1.1.13-beta/nv.d3.min.css">
+  <link rel="stylesheet" href="/lib/bootstrap-select.min.css">
+</head>
+<body>
+  <header>
+    <h1 style="float:left;">FxOS Ping Dashboard</h1>
+  </header>
+
+  <nav data-spy="affix" data-offset-top="70"
+       class="navbar navbar-default navbar-affix-top" role="navigation">
+    <form id="ping-filters" class="navbar-form navbar-left form-horizontal">
+      <div class="form-group">
+        <label for="filter-os" class="col-sm-2 control-label">OS</label>
+        <div class="col-sm-4">
+          <select id="filter-os" class="show-tick filter-os selectpicker"></select>
+        </div>
+
+        <label for="filter-model" class="col-sm-2 control-label">Model</label>
+        <div class="col-sm-4">
+          <select id="filter-model" class="show-tick filter-os selectpicker"></select>
+        </div>
+
+
+        <label for="filter-hardware" class="col-sm-2 control-label">Hardware</label>
+        <div class="col-sm-4">
+          <select id="filter-hardware" class="show-tick filter-os selectpicker"></select>
+        </div>
+      </div>
+    </form>
+  </nav>
+
+  <div class="container-fluid">
+    <div id="content" class="row">
+      <div class="col-xs-2 col-md-2">
+      </div>
+
+      <div id="chart" style="height: 300px;" class="col-xs-8 col-md-6">
+        <h2 id="measure">Ping count</h2>
+        <svg></svg>
+        <!--canvas id="chart" style="position: relative;">
+        </canvas-->
+      </div>
+    </div>
+  </div>
+
+  <!--div id="spinner" class="col-md-12">
+    <i class="fa fa-spinner fa-spin"></i>
+  </div-->
+
+  <!-- jQuery, Bootstrap and d3 -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js">
+  </script>
+  <script src="/lib/bootstrap-select.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.3.9/d3.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/nvd3/1.1.13-beta/nv.d3.min.js">
+  <!--
+      big.js and telemetry.js from telemetry.mozilla.org
+      if you're not deploying to telemetry.mozilla.org you must include these
+      from:
+          - telemetry.mozilla.org/v1/big.js
+          - telemetry.mozilla.org/v1/telemetry.js
+      (we'll try to keep it backwards compatible)
+   -->
+  <script src="//telemetry.mozilla.org/v1/big.js"></script>
+  <script src="//telemetry.mozilla.org/v1/telemetry.js"></script>
+
+  <!--
+      telemetry.jquery.js and jQuery UI widget factory for stateful plugins.
+      These are not required for using telemtry.js, but they make filtering
+      very easy, and come in handy for custom dashboards.
+  -->
+  <script src="/src/bootstrap-selector.js"></script>
+  <script src="/lib/jquery.ui.widget.js"></script>
+  <script src="/src/jquery.telemetry.js">
+  </script>
+
+  <script src="http://jquery-csv.googlecode.com/git/src/jquery.csv.js"></script>
+
+  <script src="fxosping.js"></script>
+</body>
+</html>

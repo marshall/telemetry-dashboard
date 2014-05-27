@@ -1,0 +1,71 @@
+20140329,os,1.5.0.0-prerelease,1
+20140329,model,unagi1,1
+20140328,pixel_ratio,2,1
+20140329,median_time_to_ping,50.5843066667
+20140328,network,unknown,unknown,unknown,1
+20140327,model,unknown,1
+20140327,locale,en-US,3
+20140329,firmware_revision,unknown,1
+20140329,ping_count,1
+20140329,icc,unknown,unknown,unknown,1
+20140327,pixel_ratio,1,2
+20140328,resolution,384,640,1
+20140327,network,260,310,Android,1
+20140329,hardware,nice,1
+20140328,software,Boot2Gecko 1.5.0.0-prerelease,2
+20140328,resolution,320,480,1
+20140328,update_channel,OTHER,3
+20140327,update_channel,OTHER,3
+20140329,network,unknown,unknown,unknown,1
+20140327,resolution,320,480,2
+20140328,locale,en-US,3
+20140327,icc,410,310,unknown,1
+20140327,software,Boot2Gecko 1.5.0.0-prerelease,3
+20140328,time_to_ping,2,1
+20140327,hardware,mako,1
+20140328,median_time_to_ping,18.0214272222
+20140327,resolution,384,640,1
+20140328,icc,unknown,unknown,unknown,1
+20140327,hardware,goldfish,1
+20140327,model,Full Android on Emulator,1
+20140327,icc,260,310,Android,1
+20140328,firmware_revision,unknown,3
+20140328,os,1.5.0.0-prerelease,2
+20140327,hardware,unknown,1
+20140328,model,msm7627a,1
+20140328,model,ZTE OPEN C,1
+20140328,hardware,qcom,2
+20140328,hardware,mako,1
+20140329,locale,en-US,1
+20140327,network,410,310,AT&T,1
+20140329,pixel_ratio,1,1
+20140327,icc,unknown,unknown,unknown,1
+20140327,ping_count,3
+20140328,os,1.4.0.0-prerelease,1
+20140328,icc,410,310,unknown,2
+20140327,os,1.5.0.0-prerelease,3
+20140327,median_time_to_ping,1.03469861111
+20140328,model,AOSP on Mako,1
+20140328,pixel_ratio,1.5,1
+20140327,firmware_revision,unknown,3
+20140328,network,410,310,AT&T,2
+20140328,time_to_ping,18,1
+20140329,update_channel,OTHER,1
+20140327,time_to_ping,1,3
+20140327,model,AOSP on Mako,1
+20140328,resolution,320,533,1
+20140329,time_to_ping,51,1
+20140328,time_to_ping,25,1
+20140328,software,Boot2Gecko 1.4.0.0-prerelease,1
+20140329,software,Boot2Gecko 1.5.0.0-prerelease,1
+20140329,resolution,320,480,1
+20140327,network,1,208,Fake Orange F,1
+20140328,pixel_ratio,1,1
+20140328,ping_count,3
+20140327,pixel_ratio,2,1
+20140401,ping_count,4
+20140402,ping_count,7
+20140403,ping_count,3
+20140404,ping_count,11
+20140405,ping_count,9
+20140406,ping_count,20
